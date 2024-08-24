@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marina.Infinite Pijamas/Contacto</title>
+    <link rel="stylesheet" href="modelo.css">
+</head>
+<body>
+    <header>
+        <!-- Contenido del encabezado -->
+        <div>   <!-- PC  -->
+            <img class="logo" src="img/Logo.png" alt="logo">
+            <ul class="headerpc">
+                <li class="mali-medium">
+                    <a href="index.html">INICIO</a>
+                </li>
+                <li class="mali-medium">
+                    <a href="sobrenosotros.html">SOBRE NOSOTROS</a> 
+                </li>
+                <li class="mali-medium">
+                    <a href="talles.html">TALLES</a> 
+                </li>
+                <li class="mali-light">
+                    CONTACTO
+                </li>
+                <li class="mali-medium">
+                    <a href="comocomprar.html">COMO COMPRAR</a> 
+                </li>
+            </ul>
+            <img class="carrito headerpc" src="img/carrito.png" alt="carrito">
+        </div>
+
+        <div class="header-container header-mobile">    <!-- CELULAR  -->
+          
+            <!-- Botón del menú hamburguesa -->
+           
+            <button class="menu-toggle" aria-label="Open menu">
+                <span class="menu-icon"><img src="img/menuhamburguesa.png" alt="hamburguesa"></span>
+            </button>
+            <img class="carrito" src="img/carrito.png" alt="carrito">
+       </div>
+
+       <!-- Estructura del Modal, justo después del div del header -->
+       <div id="modal" class="modal">
+          <div class="modal-content">
+             <span class="close">&times;</span>
+             <ul>
+                <li class="mali-medium"><a href="index.html">INICIO</a></li>
+                <hr class="adorno">
+                <li class="mali-medium"><a href="sobrenosotros.html">SOBRE NOSOTROS</a></li>
+                <hr class="adorno">
+                <li class="mali-medium"><a href="talles.html">TALLES</a></li>
+                <hr class="adorno">
+                <li class="mali-light">CONTACTO</li>
+
+                <hr class="adorno">
+                <li class="mali-medium"><a href="comocomprar.html">COMO COMPRAR</a></li>
+              </ul>
+           </div>
+       </div>
+    </header>
+    <script src="menu.js"></script>
+
+    <main class="acomodarfondo">
+
+        <div class="subtitulo espacio"> 
+            <hr class="linea">
+            <h1 class="mali-bold">Contacto</h1>
+        </div>
+
+        <div class="text ">
+            <p class="textopc">
+                ¡Estamos aquí para ayudarte! Resuelve todas tus dudas contactándonos a través de 
+
+                WhatsApp, <br><br>
+                
+                mensaje privado, en Instagram o Facebook. <br> <br>
+
+                Además, síguenos en nuestras redes para recibir las últimas novedades actualizadas
+
+                semanalmente. <br><br>
+                
+                ¡Muchas gracias!
+            </p>
+            <p class="textomovil">
+                ¡Estamos aquí para ayudarte! Resuelve todas tus dudas contactándonos a través de 
+
+                WhatsApp, mensaje privado, en Instagram o Facebook. <br> <br>
+
+                Además, síguenos en nuestras redes para recibir las últimas novedades actualizadas
+
+                semanalmente. <br><br>
+                
+                ¡Muchas gracias!
+            </p>
+        </div>
+
+        <div class="redes">
+                  <!--  <a id="whatsapp-link" href="https://wa.me/2241587587" target="_blank" class="flex acomodar">
+                <img src="img/what.png" alt="WhatsApp">
+                <p class="mali-regular">2241 587587</p>
+            </a> -->
+
+            <a id="whatsapp-link" href="https://api.whatsapp.com/send?phone=2241587587" target="_blank" class="flex acomodar">
+                <img src="img/what.png" alt="WhatsApp">
+                <p class="mali-regular">2241 587587</p>
+            </a>
+        
+            <a id="instagram-link" href="https://www.instagram.com/marina.infinite?igsh=amN6YmVucTc0ZnVv" target="_blank" class="flex acomodar">
+                <img src="img/ig.png" alt="Instagram">
+                <p class="mali-regular">marina.infinite</p>
+            </a>
+        
+            <a id="facebook-link" href="https://www.facebook.com/profile.php?id=61560316620234&mibextid=ZbWKwL" target="_blank" class="flex acomodar">
+                <img src="img/face.png" alt="Facebook">
+                <p class="mali-regular">marina.infinite</p>
+            </a>
+        </div>
+    </main>
+   
+
+    <footer>
+        <div class="footer-content">
+            <hr class="line left">
+            <img class="footer-logo" src="img/Logo.png" alt="logo">
+            <hr class="line right">
+        </div>
+    </footer> 
+</body>
+</html>

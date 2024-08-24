@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marina.Infinite Pijamas</title>
+    <link rel="stylesheet" href="modelo.css">
+    <link rel="stylesheet" href="carrito.css">
+    <link rel="stylesheet" href="Carritodecompras.css">
+    
+</head>
+<body>
+    
+    <header>
+        <!-- Contenido del encabezado -->
+        <div>   <!-- PC  -->
+            <img class="logo" src="img/Logo.png" alt="logo">
+            <ul class="headerpc">
+                <li class="mali-light">
+                    INICIO 
+                </li>
+                <li class="mali-medium">
+                    <a href="sobrenosotros.html">SOBRE NOSOTROS</a> 
+                </li>
+                <li class="mali-medium">
+                    <a href="talles.html">TALLES</a> 
+                </li>
+                <li class="mali-medium">
+                    <a href="contacto.html">CONTACTO</a> 
+                </li>
+                <li class="mali-medium">
+                    <a href="comocomprar.html">COMO COMPRAR</a> 
+                </li>
+            </ul>
+            <a href="carritoVacio.html">
+                <img id="cart-icon" class="carrito headerpc" src="img/carrito.png" alt="carrito">
+            </a>
+          <!--   <img id="cart-icon" class="carrito headerpc" src="img/carrito.png" alt="carrito"> -->
+           
+        </div>
+
+        <div class="header-container header-mobile">    <!-- CELULAR  -->
+          
+            <!-- Botón del menú hamburguesa -->
+           
+            <button class="menu-toggle" aria-label="Open menu">
+                <span class="menu-icon"><img src="img/menu.png" alt="hamburguesa"></span>
+            </button>
+            <img class="carrito" src="img/carrito.png" alt="carrito" >
+       </div>
+
+       <!-- Estructura del Modal, justo después del div del header -->
+       <div id="modal" class="modal">
+          <div class="modal-content">
+             <span class="close">&times;</span>
+             <ul>
+                <li class="mali-light">INICIO</li>
+                <hr class="adorno">
+                <li class="mali-medium"><a href="sobrenosotros.html">SOBRE NOSOTROS</a></li>
+                <hr class="adorno">
+                <li class="mali-medium"><a href="talles.html">TALLES</a></li>
+                <hr class="adorno">
+                <li class="mali-medium"><a href="contacto.html">CONTACTO</a></li>
+                <hr class="adorno">
+                <li class="mali-medium"><a href="comocomprar.html">COMO COMPRAR</a></li>
+              </ul>
+           </div>
+       </div>
+    </header>
+
+   
+    <main>
+        <!-- Contenido principal.. Portada -->
+      <div class="portada">
+           <h1 class="mali-bold-italic verenmovil">
+             Para estar linda y comoda<br>
+             en casa
+           </h1>
+      </div>
+       
+       <!-- Contenido principal.. -->
+       
+      <div class="subtitulo espacio"> 
+          <hr class="linea">
+          <h1 class="mali-semibold">Nuestros modelos</h1> <!-- SUBTITULO -->
+      </div>
+
+
+      <!-- EMPIEZAN FOTOS DE PIJAMAS (ESTAN EN ORDEN ZIC ZAC, IZQUIERDA DERECHA) -->
+
+      <div class="modelos1 colorizquierda"> <!-- IZQUIERDA -->
+         <img class="padding"  src="img/valeria.png" alt="foto1">
+         <div class="textoycarrito padding3">
+             <h3 class="mali-semibold">VALERIA</h3>
+             <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
+             <h5 class="talles cambiocolor average-sans-regular">TALLES DISPONIBLES<br>
+                <span>S</span>
+            </h5>
+            <p class="boton mali-regular add-to-cart" id="boton-pedir-ahora">Comprar Ahora</p>
+
+         </div>
+      </div>
+
+      <div class="modelos colorderecha"> <!-- DERECHA -->
+         
+         <div class="textoycarrito padding4">
+             <h3 class="mali-semibold">EMILIA</h3>
+             <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
+            <h5 class="talles cambiocolor average-sans-regular">TALLES DISPONIBLES<br>
+                <span>XL</span>
+            </h5>
+            <p class="boton mali-regular add-to-cart" id="boton-pedir-ahora">Comprar Ahora</p>
+
+         </div>
+         <img class="padding2"  src="img/emilia.png" alt="foto2">
+      </div>
+
+      <div class="modelos colorizquierda"> <!-- IZQUIERDA -->
+        <img class="padding" src="img/juana.png" alt="foto3">
+        <div class="textoycarrito  padding3">
+            <h3 class="mali-semibold">JUANA PETALO</h3>
+            <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
+            <h5 class="talles cambiocolor average-sans-regular">TALLES DISPONIBLES<br>S , L , XL</h5>
+            <p class="boton mali-regular add-to-cart" id="boton-pedir-ahora">Comprar Ahora</p>
+
+        </div>
+     </div>
+
+     <div class="modelos colorderecha"> <!-- DERECHA -->
+        <div class="textoycarrito padding4">
+            <h3 class="mali-semibold">LUCIA</h3>
+            <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
+            <h5 class="talles cambiocolor average-sans-regular">TALLES DISPONIBLES<br>XL , XXL</h5>
+            <p class="boton mali-regular add-to-cart" id="boton-pedir-ahora">Comprar Ahora</p>
+
+        </div>
+        <img class="padding2"  src="img/lucia.png" alt="foto4">
+     </div>
+
+     <div class="modelos colorizquierda"> <!-- IZQUIERDA -->
+        <img class="padding" src="img/india.png" alt="foto3">
+        <div class="textoycarrito  padding3">
+            <h3 class="mali-semibold">INDIA</h3>
+            <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
+            <h5 class="talles cambiocolor average-sans-regular">TALLES DISPONIBLES<br>L , XL , XXL</h5>
+            <p class="boton mali-regular add-to-cart" id="boton-pedir-ahora">Comprar Ahora</p>
+        </div>
+     </div>
+
+     <div class="modelos colorderecha"> <!-- DERECHA -->
+        <div class="textoycarrito padding4">
+            <h3 class="mali-semibold">MARTINA</h3>
+            <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
+            <h5 class="talles cambiocolor average-sans-regular">TALLES DISPONIBLES<br>XL</h5>
+            <p class="boton mali-regular add-to-cart" id="boton-pedir-ahora">Comprar Ahora</p>
+
+        </div>
+        <img class="padding2"  src="img/martina.png" alt="foto4">
+     </div>
+     
+     <div class="modelos colorizquierda"> <!-- IZQUIERDA -->
+        <img class="padding" src="img/justina.png" alt="foto3">
+        <div class="textoycarrito  padding3">
+            <h3 class="mali-semibold">JUSTINA</h3>
+            <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
+            <h5 class="talles cambiocolor average-sans-regular">TALLES DISPONIBLES<br>M</h5>
+            <p class="boton mali-regular add-to-cart" id="boton-pedir-ahora">Comprar Ahora</p>
+
+        </div>
+     </div>
+
+     <div class="modelos colorderecha"> <!-- DERECHA -->
+        <div class="textoycarrito padding4">
+            <h3 class="mali-semibold">TERE GRAY</h3>
+            <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
+            <h5 class="talles cambiocolor average-sans-regular">TALLES DISPONIBLES<br>S , L</h5>
+            <p class="boton mali-regular add-to-cart" id="boton-pedir-ahora">Comprar Ahora</p>
+
+        </div>
+        <img class="padding2"  src="img/tere.png" alt="foto4">
+     </div>
+
+     <div class="modelos colorizquierda"> <!-- IZQUIERDA -->
+        <img class="padding" src="img/rocio.png" alt="foto3">
+        <div class="textoycarrito  padding3">
+            <h3 class="mali-semibold">ROCIO</h3>
+            <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
+            <h5 class="talles cambiocolor average-sans-regular">TALLES DISPONIBLES<br>sin stock</h5>
+            <p class="boton mali-regular add-to-cart" id="boton-pedir-ahora">Comprar Ahora</p>
+
+        </div>
+     </div>
+
+     <div class="modelos colorderecha"> <!-- DERECHA -->
+        <div class="textoycarrito padding4">
+            <h3 class="mali-semibold">JULIA</h3>
+            <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
+            <h5 class="talles cambiocolor average-sans-regular">TALLES DISPONIBLES<br>L , XL , XXL</h5>
+            <p class="boton mali-regular add-to-cart" id="boton-pedir-ahora">Comprar Ahora</p>
+
+        </div>
+        <img class="padding2"  src="img/julia.png" alt="foto4">
+     </div>
+
+     <div class="modelos colorizquierda"> <!-- IZQUIERDA -->
+        <img class="padding" src="img/francesca.png" alt="foto3">
+        <div class="textoycarrito  padding3">
+            <h3 class="mali-semibold">FRANCESCA</h3>
+            <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
+            <h5 class="talles cambiocolor average-sans-regular">TALLES DISPONIBLES<br>L , XL</h5>
+            <p class="boton mali-regular add-to-cart" id="boton-pedir-ahora">Comprar Ahora</p>
+
+        </div>
+     </div>
+
+     <div class="modelos colorderecha"> <!-- DERECHA -->
+        <div class="textoycarrito padding4">
+            <h3 class="mali-semibold">GOLDEN</h3>
+            <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
+            <h5 class="talles cambiocolor average-sans-regular">TALLES DISPONIBLES<br>XL , XXL</h5>
+            <p class="boton mali-regular add-to-cart" id="boton-pedir-ahora">Comprar Ahora</p>
+
+        </div>
+        <img class="padding2"  src="img/golden2.png" alt="foto4">
+     </div>
+
+     <div class="modelos colorizquierda"> <!-- IZQUIERDA -->
+        <img class="padding" src="img/paloma.png" alt="foto3">
+        <div class="textoycarrito  padding3">
+            <h3 class="mali-semibold">PALOMA</h3>
+            <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
+            <h5 class="talles cambiocolor average-sans-regular">TALLES DISPONIBLES<br>XL</h5>
+            <p class="boton mali-regular add-to-cart" id="boton-pedir-ahora">Comprar Ahora</p>
+
+        </div>
+     </div>
+
+     
+
+     <div class="modelos colorderecha"> <!-- DERECHA -->
+        <div class="textoycarrito padding4">
+            <h3 class="mali-semibold">MARTINA</h3>
+            <h5  class=" precio cambiocolor mali-semibold">$38.000</h5>
+            <h5 class="talles cambiocolor average-sans-regular">TALLES DISPONIBLES<br>XL</h5>
+            <p class="boton mali-regular add-to-cart" id="boton-pedir-ahora">Comprar Ahora</p>
+
+        </div>
+        <img class="padding2"  src="img/martina2.png" alt="foto4">
+     </div>
+
+     <div class="modelos colorizquierda"> <!-- IZQUIERDA -->
+        <img class="padding" src="img/golden.png" alt="foto3">
+        <div class="textoycarrito  padding3">
+            <h3 class="mali-semibold">GOLDEN</h3>
+            <h5  class=" precio cambiocolor mali-semibold">$38.000</h5>
+            <h5 class="talles cambiocolor average-sans-regular">TALLES DISPONIBLES<br>XL</h5>
+            <p class="boton mali-regular add-to-cart" id="boton-pedir-ahora">Comprar Ahora</p>
+
+        </div>
+     </div>
+
+     <div class="modelos colorderecha"> <!-- DERECHA -->
+        <div class="textoycarrito padding4">
+            <h3 class="mali-semibold">LAURA</h3>
+            <h5  class=" precio cambiocolor mali-semibold">$38.000</h5>
+            <h5 class="talles cambiocolor average-sans-regular">TALLES DISPONIBLES<br>XL</h5>
+            <p class="boton mali-regular add-to-cart" id="boton-pedir-ahora">Comprar Ahora</p>
+
+        </div>
+        <img class="padding2"  src="img/laura.png" alt="foto4">
+     </div>
+
+     
+
+     
+
+      <!-- FOTOS VERCION CELULAR  -->
+
+
+     <div class="movil">
+         <div class="modelos2">
+              <img src="img/valeria.png" alt="foto1">
+               <div class="textoycarrito1">
+                  <h3 class="mali-semibold">VALERIA</h3>
+                  <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
+                  <h5 class="cambiocolor average-sans-regular">TALLES DISPONIBLES<br>S</h5>
+                  <p class="boton1 mali-regular " data-app-link="https://wa.me/2241587587">Comprar Ahora</p>
+               </div>
+          </div>
+
+          <div class="modelos2">
+            <img class="centrar"  src="img/emilia.png" alt="foto2">
+             <div class="textoycarrito1">
+                <h3 class="mali-semibold">VALERIA</h3>
+                <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
+                <h5 class="cambiocolor average-sans-regular">TALLES DISPONIBLES<br>XL</h5>
+                <p class="boton1 mali-regular " data-app-link="https://wa.me/2241587587">Comprar Ahora</p>
+             </div>
+          </div>
+           
+          <div class="modelos2">
+            <img class="centrar"  src="img/juana.png" alt="foto3">
+             <div class="textoycarrito1">
+                <h3 class="mali-semibold">JUANA PETALO</h3>
+                <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
+                <h5 class="cambiocolor average-sans-regular">TALLES DISPONIBLES<br>S , L , XL</h5>
+                <p class="boton1 mali-regular " data-app-link="https://wa.me/2241587587">Comprar Ahora</p>
+             </div>
+          </div>
+
+          <div class="modelos2">
+            <img class="centrar"  src="img/lucia.png" alt="foto4">
+             <div class="textoycarrito1">
+                <h3 class="mali-semibold">LUCIA</h3>
+                <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
+                <h5 class="cambiocolor average-sans-regular">TALLES DISPONIBLES<br>XL , XXL</h5>
+                <p class="boton1 mali-regular " data-app-link="https://wa.me/2241587587">Comprar Ahora</p>
+             </div>
+          </div>
+
+          <div class="modelos2">
+            <img class="centrar"  src="img/india.png" alt="foto5">
+             <div class="textoycarrito1">
+                <h3 class="mali-semibold">INDIA</h3>
+                <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
+                <h5 class="cambiocolor average-sans-regular">TALLES DISPONIBLES<br>L, XL , XXL</h5>
+                <p class="boton1 mali-regular " data-app-link="https://wa.me/2241587587">Comprar Ahora</p>
+             </div>
+          </div>
+
+          <div class="modelos2">
+            <img src="img/martina.png" alt="foto6">
+             <div class="textoycarrito1">
+                <h3 class="mali-semibold">MARTINA</h3>
+                <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
+                <h5 class="cambiocolor average-sans-regular">TALLES DISPONIBLES<br>XL</h5>
+                <p class="boton1 mali-regular " data-app-link="https://wa.me/2241587587">Comprar Ahora</p>
+             </div>
+        </div>
+
+        <div class="modelos2">
+            <img src="img/justina.png" alt="foto7">
+             <div class="textoycarrito1">
+                <h3 class="mali-semibold">JUSTINA</h3>
+                <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
+                <h5 class="cambiocolor average-sans-regular">TALLES DISPONIBLES<br>M</h5>
+                <p class="boton1 mali-regular " data-app-link="https://wa.me/2241587587">Comprar Ahora</p>
+             </div>
+        </div>
+
+        <div class="modelos2">
+            <img src="img/tere.png" alt="foto8">
+             <div class="textoycarrito1">
+                <h3 class="mali-semibold">TERE GRAY</h3>
+                <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
+                <h5 class="cambiocolor average-sans-regular">TALLES DISPONIBLES<br>S , L</h5>
+                <p class="boton1 mali-regular " data-app-link="https://wa.me/2241587587">Comprar Ahora</p>
+             </div>
+        </div>
+
+        <div class="modelos2">
+            <img src="img/rocio.png" alt="foto9">
+             <div class="textoycarrito1">
+                <h3 class="mali-semibold">ROCIO</h3>
+                <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
+                <h5 class="cambiocolor average-sans-regular">TALLES DISPONIBLES<br>sin stock</h5>
+                <p class="boton1 mali-regular " data-app-link="https://wa.me/2241587587">Comprar Ahora</p>
+             </div>
+        </div>
+
+        <div class="modelos2">
+            <img class="centrar"  src="img/julia.png" alt="foto10">
+             <div class="textoycarrito1">
+                <h3 class="mali-semibold">JULIA</h3>
+                <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
+                <h5 class="cambiocolor average-sans-regular">TALLES DISPONIBLES<br>L, XL , XXL</h5>
+                <p class="boton1 mali-regular " data-app-link="https://wa.me/2241587587">Comprar Ahora</p>
+             </div>
+        </div>
+
+        <div class="modelos2">
+            <img class="centrar"  src="img/francesca.png" alt="foto10">
+             <div class="textoycarrito1">
+                <h3 class="mali-semibold">FRANCESCA</h3>
+                <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
+                <h5 class="cambiocolor average-sans-regular">TALLES DISPONIBLES<br>L, XL</h5>
+                <p class="boton1 mali-regular " data-app-link="https://wa.me/2241587587">Comprar Ahora</p>
+             </div>
+        </div>
+
+        <div class="modelos2">
+            <img class="centrar"  src="img/julia.png" alt="foto10">
+             <div class="textoycarrito1">
+                <h3 class="mali-semibold">JULIA</h3>
+                <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
+                <h5 class="cambiocolor average-sans-regular">TALLES DISPONIBLES<br>L, XL , XXL</h5>
+                <p class="boton1 mali-regular " data-app-link="https://wa.me/2241587587">Comprar Ahora</p>
+             </div>
+        </div>
+
+        <div class="modelos2">
+            <img class="centrar"  src="img/golden2.png" alt="foto11">
+             <div class="textoycarrito1">
+                <h3 class="mali-semibold">GOLDEN</h3>
+                <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
+                <h5 class="cambiocolor average-sans-regular">TALLES DISPONIBLES<br>XL , XXL</h5>
+                <p class="boton1 mali-regular " data-app-link="https://wa.me/2241587587">Comprar Ahora</p>
+             </div>
+        </div>
+
+        <div class="modelos2">
+            <img class="centrar"  src="img/paloma.png" alt="foto11">
+             <div class="textoycarrito1">
+                <h3 class="mali-semibold">PALOMA</h3>
+                <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
+                <h5 class="cambiocolor average-sans-regular">TALLES DISPONIBLES<br>XL</h5>
+                <p class="boton1 mali-regular " data-app-link="https://wa.me/2241587587">Comprar Ahora</p>
+             </div>
+        </div>
+
+       <div class="modelos2">
+            <img class="centrar"  src="img/laura.png" alt="foto12">
+             <div class="textoycarrito1">
+                <h3 class="mali-semibold">LAURA</h3>
+                <h5  class=" precio cambiocolor mali-semibold">$38.000</h5>
+                <h5 class="cambiocolor average-sans-regular">TALLES DISPONIBLES<br>XL</h5>
+                <p class="boton1 mali-regular " data-app-link="https://wa.me/2241587587">Comprar Ahora</p>
+             </div>
+        </div>
+
+        <div class="modelos2">
+            <img class="centrar"  src="img/martina2.png" alt="foto12">
+             <div class="textoycarrito1">
+                <h3 class="mali-semibold">MARTINA</h3>
+                <h5  class=" precio cambiocolor mali-semibold">$38.000</h5>
+                <h5 class="cambiocolor average-sans-regular">TALLES DISPONIBLES<br>XL</h5>
+                <p class="boton1 mali-regular " data-app-link="https://wa.me/2241587587">Comprar Ahora</p>
+             </div>
+        </div>
+
+        <div class="modelos2">
+            <img class="centrar"  src="img/golden.png" alt="foto12">
+             <div class="textoycarrito1">
+                <h3 class="mali-semibold">GOLDEN</h3>
+                <h5  class=" precio cambiocolor mali-semibold">$38.000</h5>
+                <h5 class="cambiocolor average-sans-regular">TALLES DISPONIBLES<br>XL</h5>
+                <p class="boton1 mali-regular " data-app-link="https://wa.me/2241587587">Comprar Ahora</p>
+             </div>
+        </div>
+
+     </div> 
+
+     <!-- FINAL DE LOS MODELOS.. -->
+
+
+     <!-- ESTILOS Y PRECIOS.. -->
+       
+
+     <div class="subtitulo espacio"> 
+         <hr class="linea">
+         <h1 class="mali-semibold">Estilos y precios</h1>
+      </div>
+
+      <!-- CARDS.. -->
+
+      <div class="contienecards">
+         <div class="card" style="width: 20rem;">
+             <img src="img/pijamas.png" alt="Card example image">
+      
+             <div class="card-body">
+                 <h4 class="card-title">PIJAMAS</h4>
+                 <h5 class="card-subtitle cambiocolor">$49.000</h5>
+              </div>
+          </div>
+      
+
+          <div class="card" style="width: 20rem;">
+             <img src="img/camisolin.png" alt="Card example image">
+              <div class="card-body">
+                 <h4 class="card-title">CAMISOLIN</h4>
+                  <h5 class="card-subtitle cambiocolor">$38.000</h5>
+              </div>
+          </div>
+
+            <div class="card" style="width: 20rem;">
+                <img src="img/bata.png" alt="Card example image">
+                <div class="card-body">
+                    <h4 class="card-title">BATA (OPCIONAL)</h4>
+                    <h5 class="card-subtitle cambiocolor">$46.000</h5>
+              </div>
+          </div>
+        </div> 
+
+        <!-- cards movil -->
+
+        <div class="contienecards2">
+            <div class="card2" style="width: 20rem;">
+                <img src="img/pijamas.png" alt="Card example image">
+         
+                <div class="card-body2">
+                    <h4 class="card-title2">PIJAMAS</h4>
+                    <h5 class="card-subtitle2 cambiocolor2">$49.000</h5>
+                 </div>
+             </div>
+         
+   
+             <div class="card2" style="width: 20rem;">
+                <img src="img/camisolin.png" alt="Card example image">
+                 <div class="card-body2">
+                    <h4 class="card-title2">CAMISOLIN</h4>
+                     <h5 class="card-subtitle2 cambiocolor2">$38.000</h5>
+                 </div>
+             </div>
+   
+               <div class="card2" style="width: 20rem;">
+                   <img src="img/bata.png" alt="Card example image">
+                   <div class="card-body2">
+                       <h4 class="card-title2">BATA (OPCIONAL)</h4>
+                       <h5 class="card-subtitle2 cambiocolor2">$46.000</h5>
+                 </div>
+             </div>
+           </div> 
+        <script src="menu.js"></script>
+       
+    </main>
+    <script src="Carritodecompras.js"></script>
+   
+      
+   <!-- Ventana de feedback -->
+ <!--   <aside class="feedback" id="feedback">
+    <div class="botones">
+      <a href="carritoLLeno.html" class="ver">
+        <p class="boton4 mali-medium">VER CARRITO</p>
+      </a>
+      <div class="quedarse">
+        <p class="boton3 average-sans-regular">SEGUIR COMPRANDO</p>
+      </div>
+    </div>
+  </aside> -->
+
+  
+
+
+
+
+
+    
+    <!-- <script src="carrito.js"></script>   -->
+   <script src="Carritodecompras.js"></script>
+
+
+
+
+
+
+
+    
+
+
+    <footer>
+        <div class="footer-content">
+            <hr class="line left">
+            <img class="footer-logo" src="img/Logo.png" alt="logo">
+            <hr class="line right">
+        </div>
+    </footer>
+</body>
+</html>

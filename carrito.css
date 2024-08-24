@@ -1,0 +1,210 @@
+/* Ocultar y mostrar carrito */
+.cart.oculto {
+    display: none;
+}
+
+
+
+.cart.show {
+    display: block;
+  
+}
+
+.x {
+    display: flex; /* Asegura que los elementos dentro se alineen en una fila */
+    justify-content: flex-end; /* Mueve el contenido a la derecha */
+    align-items: center; /* Alinea verticalmente el contenido en el centro */
+}
+
+
+
+
+
+
+
+/* FEEDBACK */
+
+.feedback {
+    display: none; /* Oculta la ventana inicialmente */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FDE1E7;
+    border: 1px solid #F8A2B3;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+    padding: 2%;
+    z-index: 1000;
+}
+
+
+.ver, .quedarse {
+    margin: 4% 0; /* Ajusta el margen entre los botones según sea necesario */
+}
+
+.ver p, .quedarse p {
+    margin: 0; /* Elimina el margen por defecto del párrafo si es necesario */
+}
+
+/* BOTON */
+.boton3 {
+    background-color: #FDE1E7;
+    color: #333333;
+    border: none;
+    border-radius: 25px;
+    border: 2px solid #F8A2B3;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    font-size:larger;
+    transition: background-color 0.3s ease;
+   
+    margin: 0 auto; /* Centrar el botón horizontalmente */
+  }
+  
+  .boton3:hover {
+    background-color: #FBC1CC;
+  }
+
+/* BOTON */
+.boton4 {
+    background-color: #F8A2B3;
+    color: #333333;
+    
+    border: none;
+    border-radius: 25px;
+    padding: 10px 60px;
+    cursor: pointer;
+    text-align: center;
+    font-size:larger;
+    transition: background-color 0.3s ease;
+    margin: 0 auto; /* Centrar el botón horizontalmente */
+  }
+  
+  .boton4:hover {
+    background-color: #FBC1CC;
+  }
+
+
+  /* CARRITO LLENO */
+
+  /* Encabezado del carrito */
+.carrito-header2 {
+    
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  text-align: center; 
+  padding: 20px;
+  
+  padding-bottom: 5%;
+}
+
+.producto-card {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #F8A2B3;
+  background-color: #F8F6F6;
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos a lo largo del eje principal con espacio entre ellos */
+  align-items: center; /* Alinea los elementos verticalmente en el centro (opcional) */
+}
+
+.producto-card h3 {
+  margin: 0; /* Elimina el margen por defecto en los <h3> para evitar espacio extra */
+}
+  
+  .producto-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .producto-img {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .producto-texto {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .producto-texto p {
+    margin: 0;
+  }
+ 
+  /* BOTON */
+.boton5 {
+  background-color: #F8A2B3;
+  color: #333333;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 60px;
+  cursor: pointer;
+  text-align: center;
+  font-size:larger;
+  transition: background-color 0.3s ease;
+  margin: 0 auto; /* Centrar el botón horizontalmente */
+}
+
+.boton5:hover {
+  background-color: #FBC1CC;
+}
+
+
+
+
+.continuar{
+  cursor: pointer;
+  text-decoration: none; 
+  color: #333333;
+}
+
+.producto-talles {
+  margin-top: 10px;
+}
+
+.talle-boton {
+  /* background-color: #F8A2B3; */
+  background-color: #F8F6F6;
+  border: 1px solid #e0899e ;
+  
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 50%; /* Hace que el botón sea redondo */
+  width: 35px; /* Ajusta el tamaño del botón */
+  height: 35px;
+  text-align: center;
+  line-height: 30px; /* Centra el texto verticalmente */
+}
+
+.talle-boton.selected {
+  background-color: #F8A2B3; /* Cambia el color para mostrar que está seleccionado */
+  color: #333333;
+}
+
+.talle-boton:hover {
+  background-color: #F8A2B3;
+}
+
+
+.producto-card{
+  background-color: #FDE1E7; /* Color para las cards del carrito */
+}
+
+.oculto2 {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+
+
+
+
+
+
+
+

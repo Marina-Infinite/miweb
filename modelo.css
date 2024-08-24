@@ -1,0 +1,1083 @@
+/* tipografia titulos */
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.mali-extralight {
+  font-family: "Mali", cursive;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.mali-light {
+  font-family: "Mali", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.mali-regular {
+  font-family: "Mali", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mali-medium {
+  font-family: "Mali", cursive;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.mali-semibold {
+  font-family: "Mali", cursive;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.mali-bold {
+  font-family: "Mali", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.mali-extralight-italic {
+  font-family: "Mali", cursive;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.mali-light-italic {
+  font-family: "Mali", cursive;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.mali-regular-italic {
+  font-family: "Mali", cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.mali-medium-italic {
+  font-family: "Mali", cursive;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.mali-semibold-italic {
+  font-family: "Mali", cursive;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.mali-bold-italic {
+  font-family: "Mali", cursive;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+/* tipografia texto */
+
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.average-sans-regular {
+  font-family: "Average Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Reseteo de estilos */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #F8F6F6;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header, main, footer { /* PARA EVITAR QUE SE DESBORDE */
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+/* Estilos del header */
+header {
+  width: 100%;
+  background-color: #F8A2B3;
+  padding: 1%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 1%;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+
+header ul li {
+  margin: 0 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+header ul li a {
+  color: inherit; /* Hereda el color del elemento padre (en este caso, el li) */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+/* Si deseas que el color de los enlaces en el menú sea el mismo que el color del texto de los elementos de lista */
+header ul li {
+  color: #333; /* Asegúrate de que el color sea el deseado */
+}
+
+/* Puedes agregar un efecto hover si lo deseas */
+header ul li a:hover {
+  text-decoration: underline; /* O cualquier otro efecto que prefieras */
+}
+
+
+.logo {
+  margin-left: 2%;
+  height: 50px;
+}
+
+.carrito {
+  height: 30px;
+  margin-right: 1%; /* Ajuste para mover el carrito a la derecha */
+  
+}
+
+
+.header-container{
+  display: none;
+}
+
+.modal-content{
+  display: none;
+}
+
+/* Media Queries para adaptabilidad */
+@media (max-width: 1024px) {
+  header div {
+    margin-right: 3%;
+  }
+
+  header ul li {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+
+  .logo {
+    height: 45px;
+  }
+
+  .carrito {
+    height: 25px;
+  }
+}
+
+
+
+@media (min-width: 1440px) {
+  header div {
+    margin-right: 8%;
+  }
+
+  header ul li {
+    margin: 0 20px;
+    font-size: 20px;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  .carrito {
+    height: 35px;
+  }
+}
+
+
+/* -------------------------------------------------------------------------------------- */
+
+/* Estilos de la portada */
+main {
+  width: 100%;
+}
+
+.portada {
+  background-image: url('img/Portada.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+  color: white;
+}
+
+.portada h1 {
+  font-size: 1em;
+  margin-top: 22%;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Sombra para mayor legibilidad */
+  padding-left: 3%;
+  padding-right: 1%; /* Ajuste para igualar el padding */
+}
+
+@media (max-width: 768px) { /* PARA CELULAR */
+  .portada h1 {
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Sombra para mayor legibilidad */
+    padding-top: 0; /* Eliminar padding superior */
+    margin: 0; /* Eliminar margen superior e inferior */
+    margin-top: 100%;
+    color: #ffffff;
+  }
+  
+  .portada {
+    background-image: url('img/portadamovil.png');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+  }
+  
+  /* .verenmovil {
+    background-color: #f8a2b337;
+    display: inline-block;
+    padding: 0; /* Asegúrate de que no haya padding 
+    margin: 0; /* Eliminar margen 
+  } */
+
+  
+ 
+}
+
+@media (min-width: 1440px) {
+  .portada h1 {
+    font-size: 3.5em;
+  }
+}
+
+@media (min-width: 1900px) {
+  .portada h1 {
+    font-size: 3.5em;
+  }
+}
+
+
+/* -------------------------------------------------------------------------------------- */
+
+/* ESTRUCTURA */
+
+.espacio {
+  padding: 3%;
+}
+
+.subtitulo {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  color: #333;
+}
+
+.linea {
+  border: none;
+  border-left: 4px solid #F8A2B3;
+  height: 2em;
+  margin-right: 20px;
+}
+
+
+
+.modelos1, .modelos {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  justify-content: space-between; 
+  padding-right: 1%; 
+  margin-bottom: 5%;
+  
+  
+}
+
+.precio{
+  margin-bottom: 4px;
+}
+
+
+.colorizquierda {
+  background: linear-gradient(to left, 
+    #F8F6F6 0%, 
+    #F8F6F6 2%, 
+    #FDE1E7 2%, 
+    #FDE1E7 93%, 
+    #F8F6F6 93%, 
+    #F8F6F6 100%);
+}
+
+
+.colorderecha {
+  background: linear-gradient(to right, 
+    #F8F6F6 0%, 
+    #F8F6F6 3%, 
+    #FDE1E7 3%, 
+    #FDE1E7 93%, 
+    #F8F6F6 95%, 
+    #F8F6F6 100%);
+}
+
+
+
+.modelos  img {
+  flex: 1;
+  max-width: 50%;
+  padding-right: 1%; /* Ajuste para igualar el padding */
+}
+
+.modelos1  img {
+  flex: 1;
+  max-width: 50%;
+  padding-right: 1%; /* Ajuste para igualar el padding */
+}
+
+
+.textoycarrito {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
+  text-align: center;
+  
+}
+
+.textoycarrito h4, .textoycarrito p {
+  margin: 10px 0;
+}
+
+.padding {
+  padding-left: 3%;
+}
+
+.padding2, .padding3, .padding4 {
+  padding-left: 1%; /* Ajuste de padding */
+}
+
+/* Media Queries para adaptabilidad */
+@media (max-width: 768px) {
+  .modelos, .modelos1 {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0; /* Ajuste para dispositivos pequeños */
+  }
+
+  .modelos img, .modelos1 img {
+    margin: 0 0 10px 0;
+  }
+
+  .textoycarrito {
+    justify-items: center;
+    text-align: center;
+  }
+
+  .padding, .padding2, .padding3, .padding4 {
+    padding-left: 0;
+  }
+}
+
+/* BOTON */
+.boton {
+  background-color: #F8A2B3;
+  color: #333333;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  font-size:larger;
+  transition: background-color 0.3s ease;
+ 
+  margin: 0 auto; /* Centrar el botón horizontalmente */
+}
+
+.boton:hover {
+  background-color: #FBC1CC;
+}
+
+.botones{
+   /* Flexbox para centrar los botones */
+   display: flex;
+   flex-direction: column;
+   justify-content: center; /* Centra el contenido verticalmente */
+   align-items: center; /* Centra el contenido horizontalmente */
+   text-align: center; /* Centra el texto dentro de los botones */
+}
+
+/* CARDS */
+.contienecards {
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  margin-left: 3%; /* Ajuste para igualar el padding */
+  margin-right: 1%; /* Ajuste para igualar el padding */
+  flex-wrap: wrap;
+  margin-bottom: 10%;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-body {
+  background-color: #FDE1E7;
+  color: #333;
+  padding: 15px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #F8A2B3;
+  padding: 40px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.line {
+  flex: 1;
+  border: none;
+  border-top: 1px solid #333;
+}
+
+.left {
+  margin-right: 20px;
+}
+
+.right {
+  margin-left: 20px;
+}
+
+.footer-logo {
+  height: 50px;
+}
+
+.movil{
+  display: none;
+}
+
+.modelos2{
+  display: none;
+}
+
+.centrar{
+  display: none;
+}
+
+.textoycarrito1{
+  display: none;
+}
+
+.boton1{
+  display: none;
+}
+
+.contienecards2{
+  display: none;
+}
+
+
+/* -------------------------------------------------------------------------------------- */
+
+
+
+/* SSOBRE NOSOTRAS */
+
+.acomodarfondo{
+  padding-right: 1%;
+}
+
+.espacio2 {
+  padding-left: 77%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.linea2 {
+  border: none; /* Elimina cualquier borde por defecto */
+  border-right: 4px solid #F8A2B3; /* Crea un borde derecho sólido de 4px de ancho con color #F8A2B3 */
+  height: 2em; /* Define la altura de la línea como 2em (relativa al tamaño del texto) */
+  margin-left: 20px; /* Establece un margen a la derecha de 20px para separar la línea del texto */
+  
+}
+
+
+.fondo{
+  background-color: #FDE1E7;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  text-align: center;
+  border-radius: 25px;
+  padding: 1%;
+  font-size: x-large;
+ 
+}
+
+
+
+.text{
+  margin-left: 3%;
+  font-size: x-large;
+}
+
+@media (max-width: 768px) { /* PARA CELULAR */
+  .espaciomovil{
+    width: 90%;
+  }
+  
+  .espacio2{
+    padding-left: 20%;
+  }
+
+  .text{
+    padding-bottom: 5%;
+  }
+
+  .fondo{
+    margin-top: 8%;
+    margin-bottom: 16%;
+    padding: 5%;
+    font-size: x-large;
+  }
+ 
+}
+
+@media (max-width: 365px) {
+  .espacio2{
+    padding-left: 15%;
+  }
+}
+
+
+
+/* -------------------------------------------------------------------------------------- */
+
+
+/* CONTACTO */
+
+.redes {
+  border: 2px solid #F8A2B3;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  background-color: #FDE1E7;
+  color: #333;
+  width: 250px; /* Ajusta el ancho según sea necesario */
+  height: 200px; /* Ajusta la altura según sea necesario */
+  margin: auto;
+  justify-content: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  
+  gap: 20px;
+}
+
+.acomodar {
+  color: #333; /* Hereda el color del elemento padre */
+  text-decoration: none; /* Elimina la línea subrayada */
+}
+
+.acomodar:hover {
+  color: #6a6a6a; /* Mantiene el color al pasar el ratón por encima */
+  text-decoration: none; /* Mantiene sin subrayar al pasar el ratón por encima */
+}
+.textomovil{
+  display: none;
+}
+
+@media (max-width: 768px) { /* PARA CELULAR */
+
+  .acomodarfondo{
+    width: 90%;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+  }
+
+  .redes{
+    margin-top: 10%;
+    margin-bottom: 20%;
+  }
+
+  .textomovil{
+    display: block;
+  }
+
+  .textopc{
+    display: none;
+  }
+
+
+
+}
+
+
+/* -------------------------------------------------------------------------------------- */
+
+
+
+/* TALLES pc */
+
+.cuadro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.cuadro img{
+  max-width: 70%; /* La imagen no excederá el ancho del contenedor */
+  height: auto; /* Mantiene la proporción original de la imagen */
+  
+}
+
+.tallesmovil {
+  display: none; /* Oculta la versión móvil por defecto */
+  text-align: center;
+  margin: 20px 0;
+}
+
+.tallesmovil img {
+  width: 100%;
+  height: auto;
+  max-width: 400px; /* Ajusta este valor según tus necesidades */
+  cursor: pointer;
+}
+
+
+
+
+@media (max-width: 768px) { /* PARA CELULAR */
+
+  .pc{
+    display: none;
+  }
+
+  .cuadro{
+    display: none;
+  }
+
+  .acomodartexto  li {
+    margin-top: 10px;
+    margin-bottom: 20px; /* Ajusta el valor según tu necesidad */
+  }
+  
+  .mali-regular li {
+    margin-bottom: 10px; /* Ajusta el valor según tu necesidad */
+  }
+
+  .tallesmovil {
+    display: block; 
+    margin-top: 10%;
+    margin-bottom: 20%;
+  }
+
+  .acomodarfondo{
+    width: 90%;
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+ .centrarcontenido{
+  text-align: center;
+ }
+
+ 
+
+  .acomodartexto{
+    font-size: x-large;
+    text-align: left;
+    padding-left: 3%;
+  }
+
+  .acomodartexto li{
+    list-style-type: none; /* Elimina los puntos */
+  }
+
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+/* como comprar */
+
+.punteo{
+  font-size: x-large;
+  margin-left: 3%;
+ 
+  margin-bottom: 5%;
+  
+}
+
+.colorarriba{
+color: #333;
+}
+
+.cambiocolor{
+  color: #6b6b6b;
+} 
+
+
+@media (max-width: 768px) { /* PARA CELULAR */
+
+  .acomodarfondo{
+    width: 90%;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+  }
+
+  .fondomovil{
+    margin-bottom: 15%;
+    
+  }
+
+  .fondomovil2{
+    margin-top: 8%;
+  }
+
+
+
+}
+
+
+/* -------------------------------------------------------------------------------------- */
+
+
+/* PARA CELULAR HEADER Y CENTRO */
+
+@media (max-width: 768px) {
+ header {
+    padding: 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Asegura que los elementos estén centrados verticalmente */
+  }
+
+  .headerpc {
+    display: none; /* Oculta la versión de escritorio */
+  }
+
+  .header-mobile {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  
+
+  .menu-icon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .carrito {
+    width: 35px;
+    height: 35px;
+    margin-left: 20px; /* Espacio entre el menú hamburguesa y el carrito */
+  }
+
+  .menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto; /* Alinea el menú hamburguesa a la derecha */
+  }
+
+  header ul li  {
+    margin: 10px 0;
+    font-size: 14px;
+    
+  }
+
+  header ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    text-decoration: none; 
+  }
+
+/* Estilo del Modal */
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4); /* Fondo semitransparente */
+}
+
+.modal-content {
+  display: block;
+  background-color: #F8A2B3; /* Fondo del modal */
+  border: 2px solid #FDE1E7; /* Borde del modal */
+  color: #333;
+  margin: 0% auto;
+  padding: 20px;
+  margin-left: 49.9%;
+  width: 50%;
+  letter-spacing: 0.5px; /* Espaciado entre caracteres */
+  word-spacing: 2px; /* Espaciado entre palabras */
+}
+
+
+.modal-content li {
+  margin-bottom: 20px; /* Espaciado entre los elementos de la lista */
+  
+}
+
+.adorno {
+  border: none;
+  margin: 0px; /* Elimina el margen para ajustar la línea */
+  height: 1px; /* Ajusta la altura de la línea */
+  width: 90%; /* Ajusta el ancho de la línea si es necesario */
+  background-color: #FDE1E7; /* Color sólido de la línea */
+}
+
+.close {
+  color: #333;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+/* PORTADA HECHA ARRIBA */
+
+/* centro */
+
+
+.modelos{
+  display: none;
+}
+
+.modelos1{
+  display: none;
+}
+
+.colorderecha{
+  display: none;
+}
+
+.colorizquierda{
+  display: none;
+}
+
+.boton{
+  display: none;
+}
+
+.movil{
+  display: block;
+}
+
+.modelos2{
+  display: block;
+ 
+
+}
+
+.centrar{
+  display: block;
+}
+
+.textoycarrito1{
+  display: block;
+}
+
+.boton1{
+  display: block;
+}
+
+.modelos2 {
+  display: flex;
+  flex-direction: column; /* Alinea los elementos en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  width: 90%; /* Ajusta el ancho del contenedor para que coincida con el ancho de los elementos hijos */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+}
+
+.modelos2 img {
+  width: 100%; /* Asegúrate de que la imagen ocupe el ancho completo del contenedor */
+  height: auto;
+  
+}
+
+.textoycarrito1 {
+  background-color: #FDE1E7;
+  color: #333;
+  padding: 15px;
+  width: 100%; /* Asegúrate de que el ancho del contenido de texto coincida con el ancho del contenedor */
+  text-align: center;
+}
+
+.boton1{
+  background-color: #F8A2B3;
+  color: #333333;
+  border: none;
+  
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  font-size:larger;
+  transition: background-color 0.3s ease;
+ 
+  margin: 10px auto 0; /* Centrar el botón horizontalmente */
+}
+
+.boton1:hover {
+  background-color: #FBC1CC;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+
+/* CARDS */
+
+.contienecards{
+  display: none;
+}
+
+.contienecards2{
+  display: block;
+}
+
+.card2{
+  margin-bottom: 10%;
+  
+}
+
+.contienecards2{
+  display: flex;
+  flex-direction: column; /* Alinea los elementos en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  width: 80%; /* Ajusta el ancho del contenedor para que coincida con el ancho de los elementos hijos */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+}
+
+.contienecards2 img {
+  width: 100%; /* Asegúrate de que la imagen ocupe el ancho completo del contenedor */
+  height: auto;
+  
+}
+
+.card-body2{
+  background-color: #FDE1E7;
+  color: #333;
+  padding: 15px;
+  width: 100%; /* Asegúrate de que el ancho del contenido de texto coincida con el ancho del contenedor */
+  text-align: center;
+}
+
+.cambiocolor2{
+  color: #6b6b6b;
+}
+
+.card-subtitle2{
+  font-size: larger;
+}
+
+.card-title2{
+ font-size: larger;
+}
+
+
+
+
+
+
+
+
+
+
+} 
+
+
+
