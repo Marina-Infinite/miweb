@@ -1,29 +1,38 @@
-document.getElementById('boton-pedir-ahora').addEventListener('click', function(event) {
-    handleLinkClick(event, 'https://api.whatsapp.com/send?phone=542241587587&text=Hola,%20me%20interesa%20el%20producto%20Valeria', 'https://web.whatsapp.com/send?phone=542241587587&text=Hola,%20me%20interesa%20el%20producto%20Valeria');
+// Selecciona todos los elementos con la clase .boton
+document.querySelectorAll('.boton').forEach(function(button) {
+    button.addEventListener('click', function(event) {
+        // Puedes personalizar el mensaje según el modelo
+        let modelo = this.closest('.textoycarrito').querySelector('h3').innerText;
+        let message = `Hola, me interesa el producto ${modelo}`;
+        let phone = '542241587587';
+        
+        handleLinkClick(event, `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`, `https://web.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`);
+    });
 });
 
 function handleLinkClick(event, appLink, webLink) {
     event.preventDefault();
-    // Intenta abrir la app de WhatsApp
-    window.location.href = appLink;
-    
-    // Si la app no se abre, redirige a la versión web de WhatsApp después de un pequeño retraso
+    // abre whatsapp web
     setTimeout(function() {
         window.location.href = webLink;
     }, 1000);
 }
 
+// Selecciona todos los elementos con la clase .boton1
 document.querySelectorAll('.boton1').forEach(function(button) {
     button.addEventListener('click', function(event) {
         event.preventDefault();
         
-        // Obtén el enlace desde el atributo data-* del botón
-        const appLink = button.getAttribute('data-app-link');
+        // Personaliza el mensaje según el modelo
+        let modelo = this.closest('.textoycarrito1').querySelector('h3').innerText;
+        let message = `Hola, me interesa el producto ${modelo}`;
+        let phone = '2241587587'; // Asegúrate de que el número esté en el formato internacional sin el '+' inicial
 
-        // Intenta abrir WhatsApp en la aplicación
+        // Construir el enlace de WhatsApp con el mensaje
+        let appLink = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+        // Abre WhatsApp directamente en la aplicación móvil
         window.location.href = appLink;
-
-        // Nota: No hay fallback a la versión web en este caso
     });
 });
 
