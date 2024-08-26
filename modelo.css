@@ -134,7 +134,7 @@ header div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: 1%;
+  margin-right: 3%;
 }
 
 header ul {
@@ -143,7 +143,7 @@ header ul {
 }
 
 header ul li {
-  margin: 0 15px;
+  margin: 0 13px;
   font-size: 18px;
   cursor: pointer;
 }
