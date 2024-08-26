@@ -1,13 +1,13 @@
 document.getElementById('boton-pedir-ahora').addEventListener('click', function(event) {
-    handleLinkClick(event, 'instagram://direct/new?username=marina.infinite', 'https://www.instagram.com/direct/t/');
+    handleLinkClick(event, 'https://api.whatsapp.com/send?phone=542241587587&text=Hola,%20me%20interesa%20el%20producto%20Valeria', 'https://web.whatsapp.com/send?phone=542241587587&text=Hola,%20me%20interesa%20el%20producto%20Valeria');
 });
 
 function handleLinkClick(event, appLink, webLink) {
     event.preventDefault();
-    // Intenta abrir la app de Instagram en la ventana de mensaje directo
+    // Intenta abrir la app de WhatsApp
     window.location.href = appLink;
     
-    // Si la app no se abre, redirige al navegador después de un pequeño retraso
+    // Si la app no se abre, redirige a la versión web de WhatsApp después de un pequeño retraso
     setTimeout(function() {
         window.location.href = webLink;
     }, 1000);
