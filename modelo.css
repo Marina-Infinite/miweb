@@ -288,7 +288,9 @@ main {
 
 @media (max-width: 768px) { /* PARA CELULAR */
   .portadamovil h1 {
-    font-size: 2.5em;
+   
+     font-size: 3rem; /* Para pantallas pequeñas */
+    
     text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Sombra para mayor legibilidad */
     padding-top: 0; /* Eliminar padding superior */
     margin: 0; /* Eliminar margen superior e inferior */
@@ -352,6 +354,10 @@ main {
  
 }
 
+
+
+/* TAMAÑO DE LETRA EN PC */
+
 @media (min-width: 1440px) {
   .portada h1 {
     font-size: 70px;
@@ -364,7 +370,17 @@ main {
   }
 }
 
+@media (min-width: 450px) {
+  .portadamovil h1 {
+    font-size: 5rem; /* Aumenta el tamaño en pantallas medianas */
+  }
+}
 
+@media (min-width: 600px) {
+  .portadamovil h1 {
+    font-size: 5rem; /* Aún más grande en pantallas grandes */
+  }
+}
 
 /* -------------------------------------------------------------------------------------- */
 
