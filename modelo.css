@@ -228,6 +228,7 @@ header ul li a:hover {
 
 /* -------------------------------------------------------------------------------------- */
 
+
 /* Estilos de la portada */
 main {
   width: 100%;
@@ -289,13 +290,14 @@ main {
 @media (max-width: 768px) { /* PARA CELULAR */
   .portadamovil h1 {
    
-     font-size: 3rem; /* Para pantallas pequeñas */
+     
     
     text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Sombra para mayor legibilidad */
     padding-top: 0; /* Eliminar padding superior */
     margin: 0; /* Eliminar margen superior e inferior */
     margin-top: 40%;
     margin-left: 3%;
+    margin-right: 3%;
     color: #ffffff;
   }
 
@@ -370,9 +372,15 @@ main {
   }
 }
 
+@media (min-width: 300px) {
+  .portadamovil h1 {
+    font-size: 3rem; /* Aumenta el tamaño en pantallas medianas */
+  }
+}
+
 @media (min-width: 450px) {
   .portadamovil h1 {
-    font-size: 5rem; /* Aumenta el tamaño en pantallas medianas */
+    font-size: 6rem; /* Aumenta el tamaño en pantallas medianas */
   }
 }
 
