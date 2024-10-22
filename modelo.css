@@ -228,7 +228,6 @@ header ul li a:hover {
 
 /* -------------------------------------------------------------------------------------- */
 
-
 /* Estilos de la portada */
 main {
   width: 100%;
@@ -357,39 +356,38 @@ main {
 }
 
 
-
-/* TAMAÑO DE LETRA EN PC */
-
-@media (min-width: 1440px) {
-  .portada h1 {
-    font-size: 70px;
-  }
-}
-
-@media (min-width: 1900px) {
-  .portada h1 {
-    font-size: 60px;
-  }
-}
-
+/* Pantallas pequeñas (móviles) */
 @media (min-width: 300px) {
   .portadamovil h1 {
-    font-size: 3rem; /* Aumenta el tamaño en pantallas medianas */
+    font-size: 3rem; /* Tamaño adecuado para pantallas móviles */
   }
 }
 
 @media (min-width: 450px) {
   .portadamovil h1 {
-    font-size: 6rem; /* Aumenta el tamaño en pantallas medianas */
+    font-size: 4rem; /* Tamaño más grande en pantallas móviles más amplias */
   }
 }
 
 @media (min-width: 600px) {
   .portadamovil h1 {
-    font-size: 5rem; /* Aún más grande en pantallas grandes */
+    font-size: 5rem; /* Tamaño aún más grande en pantallas tipo tablet */
   }
 }
 
+/* Pantallas medianas (laptops, tablets grandes) */
+@media (min-width: 1440px) {
+  .portada h1 {
+    font-size: 70px; /* Tamaño adecuado para pantallas grandes */
+  }
+}
+
+/* Pantallas muy grandes (monitores de escritorio grandes) */
+@media (min-width: 1900px) {
+  .portada h1 {
+    font-size: 80px; /* Aumenta ligeramente en pantallas muy grandes */
+  }
+}
 /* -------------------------------------------------------------------------------------- */
 
 /* ESTRUCTURA */
@@ -568,6 +566,8 @@ main {
   padding: 15px;
 }
 
+
+
 /* FOOTER */
 footer {
   background-color: #F8A2B3;
@@ -624,6 +624,20 @@ footer {
 
 .contienecards2{
   display: none;
+}
+
+
+/* DESCUENTO */
+
+.tacha {
+  text-decoration: line-through; /* Agrega la línea que tacha el texto */
+  margin-right: 10px; /* Añade un pequeño espacio entre el precio tachado y el descuento */
+}
+
+.descuento {
+  color: rgb(111, 16, 16); /* Puedes cambiar el color del texto del descuento */
+  font-weight: bold; /* Puedes hacerlo en negrita si quieres */
+  font-size: 0.9em; /* Ajusta el tamaño del texto si es necesario */
 }
 
 
@@ -1159,7 +1173,79 @@ color: #333;
 
 
 
+/* FEEDBACK */
 
+.feedback {
+  display: none; /* Oculta la ventana inicialmente */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FDE1E7;
+  border: 1px solid #F8A2B3;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+  padding: 2%;
+  z-index: 1000;
+}
+
+
+.ver, .quedarse {
+  margin: 4% 0; /* Ajusta el margen entre los botones según sea necesario */
+}
+
+.ver p, .quedarse p {
+  margin: 0; /* Elimina el margen por defecto del párrafo si es necesario */
+}
+
+/* BOTON */
+.boton3 {
+  background-color: #FDE1E7;
+  color: #333333;
+  border: none;
+  border-radius: 25px;
+  border: 2px solid #F8A2B3;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  font-size:larger;
+  transition: background-color 0.3s ease;
+ 
+  margin: 0 auto; /* Centrar el botón horizontalmente */
+}
+
+.boton3:hover {
+  background-color: #FBC1CC;
+}
+
+/* BOTON */
+.boton4 {
+  background-color: #F8A2B3;
+  color: #333333;
+  
+  border: none;
+  border-radius: 25px;
+  padding: 10px 60px;
+  cursor: pointer;
+  text-align: center;
+  font-size:larger;
+  transition: background-color 0.3s ease;
+  margin: 0 auto; /* Centrar el botón horizontalmente */
+}
+
+.boton4:hover {
+  background-color: #FBC1CC;
+}
+
+
+
+
+
+
+
+
+
+
+} 
 
 
 
