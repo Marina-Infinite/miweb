@@ -13,7 +13,7 @@ function handleLinkClick(event, mobileUrl, webUrl) {
 
 
 document.getElementById('whatsapp-link').addEventListener('click', function(event) {
-    handleLinkClick(event, 'https://wa.me/2241697504', 'https://web.whatsapp.com/send?phone=2241587587');
+    handleLinkClick(event, 'https://wa.me/2241697504', 'https://web.whatsapp.com/send?phone=2241697504');
 });
 
 document.getElementById('instagram-link').addEventListener('click', function(event) {
