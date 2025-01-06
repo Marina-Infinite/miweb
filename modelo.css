@@ -130,11 +130,13 @@ header {
 
 
 
+
+
 header div {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-right: 3%;
+  
+  margin-right: 10%;
 }
 
 header ul {
@@ -167,13 +169,14 @@ header ul li a:hover {
 .logo {
   margin-left: 2%;
   height: 50px;
+  margin-right: 17%;
 }
 
-.carrito {
+/* .carrito {
   height: 30px;
-  margin-right: 1%; /* Ajuste para mover el carrito a la derecha */
+  margin-right: 1%; /* Ajuste para mover el carrito a la derecha 
   
-}
+} */
 
 
 .header-container{
