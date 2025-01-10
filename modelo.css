@@ -540,13 +540,15 @@ main {
 }
 
 /* CARDS */
+
+
 .contienecards {
   display: flex;
   gap: 5%;
-  justify-content: center;
-  margin-left: 3%; /* Ajuste para igualar el padding */
-  margin-right: 1%; /* Ajuste para igualar el padding */
-  flex-wrap: wrap;
+  justify-content: flex-start; /* Alineación inicial para el carrusel */
+  overflow: hidden; /* Oculta las tarjetas que están fuera de la vista */
+  margin-left: 3%;
+  margin-right: 2%;
   margin-bottom: 10%;
 }
 
@@ -555,6 +557,8 @@ main {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  flex: 0 0 calc(30% - 4%); /* Mantén 3 tarjetas visibles ajustando el ancho */
+  transition: transform 0.3s ease-in-out;
 }
 
 .card img {
@@ -569,6 +573,17 @@ main {
   padding: 15px;
 }
 
+
+
+button {
+  position: relative;
+  top: -130px; /* Mueve los botones hacia arriba */
+  background-color: #4e4e4e;
+  color: #FDE1E7;
+}
+
+
+/* ............................................................................................................. */
 
 
 /* FOOTER */
@@ -1249,13 +1264,3 @@ color: #333;
 
 
 } 
-
-
-
-
-
-
-} 
-
-
-
