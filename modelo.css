@@ -1148,6 +1148,10 @@ color: #333;
   display: block;
 }
 
+  .botonescards {
+  display: none;
+}
+
 .card2{
   margin-bottom: 10%;
   
