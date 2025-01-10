@@ -577,7 +577,7 @@ main {
 
 .botonCard {
   position: relative;
-  top: -100px; /* Mueve los botones hacia arriba */
+  top: -120px; /* Mueve los botones hacia arriba */
   
   color: #FDE1E7;
 }
