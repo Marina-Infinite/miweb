@@ -390,7 +390,7 @@
             <img src="img/corto.png" alt="foto1">
              <div class="textoycarrito1">
                 <h3 class="mali-semibold">LAURA CORTO</h3>
-                <h5  class=" precio cambiocolor mali-semibold">$42.000</h5>
+                <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
                 <h5 class="cambiocolor average-sans-regular">TALLES DISPONIBLES<br>S, M, L</h5>
                 <p class="boton1 average-sans-regular  " data-app-link="https://wa.me/2241697504">Comprar Ahora</p>
              </div>
@@ -400,7 +400,7 @@
             <img src="img/GOLDENCORTO.png" alt="foto1">
              <div class="textoycarrito1">
                 <h3 class="mali-semibold">GOLDEN CORTO</h3>
-                <h5  class=" precio cambiocolor mali-semibold">$42.000</h5>
+                <h5  class=" precio cambiocolor mali-semibold">$49.000</h5>
                 <h5 class="cambiocolor average-sans-regular">TALLES DISPONIBLES<br>S, M, L</h5>
                 <p class="boton1 average-sans-regular  " data-app-link="https://wa.me/2241697504">Comprar Ahora</p>
              </div>
@@ -665,33 +665,85 @@
 
                <!-- CARDS.. -->
 
-      <div class="contienecards">
-         <div class="card" style="width: 20rem;">
-             <img src="img/pijamas.png" alt="Card example image">
-      
-             <div class="card-body">
-                 <h4 class="card-title">PIJAMAS</h4>
-                 <h5 class="card-subtitle cambiocolor">$52.000</h5>
-              </div>
-          </div>
-      
+               <div class="contienecards">
+                <div class="card" style="width: 20rem;">
+                  <img src="img/pijamas.png" alt="Card example image">
+                  <div class="card-body">
+                    <h4 class="card-title">PIJAMAS INVIERNO</h4>
+                    <h5 class="card-subtitle cambiocolor">$52.000</h5>
+                  </div>
+                </div>
 
-          <div class="card" style="width: 20rem;">
-             <img src="img/camisolin.png" alt="Card example image">
-              <div class="card-body">
-                 <h4 class="card-title">CAMISOLIN</h4>
-                  <h5 class="card-subtitle cambiocolor">$38.000</h5>
-              </div>
-          </div>
-
-            <div class="card" style="width: 20rem;">
-                <img src="img/bata.png" alt="Card example image">
-                <div class="card-body">
+                <div class="card" style="width: 20rem;">
+                    <img src="img/pijamacorto.png" alt="Card example image">
+                    <div class="card-body">
+                      <h4 class="card-title">PIJAMAS VERANO</h4>
+                      <h5 class="card-subtitle cambiocolor">$42.000</h5>
+                    </div>
+                  </div>
+                <div class="card" style="width: 20rem;">
+                  <img src="img/camisolin.png" alt="Card example image">
+                  <div class="card-body">
+                    <h4 class="card-title">CAMISOLIN</h4>
+                    <h5 class="card-subtitle cambiocolor">$38.000</h5>
+                  </div>
+                </div>
+                <div class="card" style="width: 20rem;">
+                  <img src="img/bata.png" alt="Card example image">
+                  <div class="card-body">
                     <h4 class="card-title">BATA (OPCIONAL)</h4>
                     <h5 class="card-subtitle cambiocolor">$46.000</h5>
+                  </div>
+                </div>
+            
               </div>
-          </div>
-        </div> 
+              
+              <!-- Botones de navegación -->
+              <div style="text-align: center; margin-top: 20px;">
+                <button id="slideLeft" style="padding: 10px 20px; margin-right: 10px;">←</button>
+                <button id="slideRight" style="padding: 10px 20px;">→</button>
+              </div>
+              
+<!-- JavaScript -->
+<script>
+    const container = document.querySelector('.contienecards');
+    let scrollPosition = 0;
+    const cardWidth = document.querySelector('.card').offsetWidth + (container.offsetWidth * 0.05); // Card width + gap
+  
+    // Función para deslizar hacia la derecha
+    function slideRight() {
+      if (scrollPosition < container.scrollWidth - container.clientWidth) {
+        scrollPosition += cardWidth;
+        container.scrollTo({
+          left: scrollPosition,
+          behavior: 'smooth',
+        });
+      }
+    }
+  
+    // Función para deslizar hacia la izquierda
+    function slideLeft() {
+      if (scrollPosition > 0) {
+        scrollPosition -= cardWidth;
+        container.scrollTo({
+          left: scrollPosition,
+          behavior: 'smooth',
+        });
+      }
+    }
+  
+    // Vincula las funciones a los botones
+    document.getElementById('slideRight').addEventListener('click', slideRight);
+    document.getElementById('slideLeft').addEventListener('click', slideLeft);
+  </script>
+              
+
+
+
+
+
+
+
 
         <!-- cards movil -->
 
@@ -710,7 +762,7 @@
          
                 <div class="card-body2">
                     <h4 class="card-title2">PIJAMA VERANO</h4>
-                    <h5 class="card-subtitle2 cambiocolor2">$42.000</h5>
+                    <h5 class="card-subtitle2 cambiocolor2">$52.000</h5>
                  </div>
              </div>
 
